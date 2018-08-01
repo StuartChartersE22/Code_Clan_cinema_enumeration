@@ -22,4 +22,10 @@ Cinema.prototype.areAllFilmsOverRuntime = function (runtime) {
   return this.films.every(film => film.runtime > runtime);
 };
 
+Cinema.prototype.getTotalRuntime = function () {
+  return this.films.reduce((total,film) => {
+      return total + film.runtime;
+  },0);
+}
+
 module.exports = Cinema;

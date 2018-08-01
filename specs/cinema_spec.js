@@ -52,7 +52,10 @@ describe('Cinema', function () {
     const result = cinema.areAllFilmsOverRuntime(80);
     assert.strictEqual(result, true);
   });
-  xit('should be able to calculate total running time of all films');
+  it('should be able to calculate total running time of all films', function () {
+    const result = cinema.getTotalRuntime();
+    assert.strictEqual(result, 622);
+  });
 
 });
 
