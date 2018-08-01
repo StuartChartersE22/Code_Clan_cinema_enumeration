@@ -40,7 +40,10 @@ describe('Cinema', function () {
     const results = cinema.findFilmsByGenre(`drama`);
     assert.deepStrictEqual(results, [moonlight, trainspotting]);
   });
-  xit('should be able to check whether there are some films from a particular year');
+  it('should be able to check whether there are some films from a particular year', function () {
+    const result = cinema.hasFilmsByYear(2017);
+    assert.strictEqual(result, true);
+  });
   xit('should be able to check whether there are no films from a particular year');
   xit('should be able to check whether all films are over a particular length');
   xit('should be able to calculate total running time of all films');
