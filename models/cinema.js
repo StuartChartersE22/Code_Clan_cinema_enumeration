@@ -18,4 +18,8 @@ Cinema.prototype.hasFilmsByYear = function (year) {
   return this.films.some(film => film.year === year);
 };
 
+Cinema.prototype.areAllFilmsOverRuntime = function (runtime) {
+  return this.films.every(film => film.runtime > runtime);
+};
+
 module.exports = Cinema;
