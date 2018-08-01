@@ -44,8 +44,14 @@ describe('Cinema', function () {
     const result = cinema.hasFilmsByYear(2017);
     assert.strictEqual(result, true);
   });
-  xit('should be able to check whether there are no films from a particular year');
-  xit('should be able to check whether all films are over a particular length');
+  xit('should be able to check whether there are no films from a particular year', function () {
+    const result = cinema.hasFilmsByYear(2000);
+    assert.strictEqual(result, false);
+  });
+  // xit('should be able to check whether all films are over a particular length', function () {
+  //   const result = cinema.hasFilmsOverRuntime(100);
+  //   assert.
+  // });
   xit('should be able to calculate total running time of all films');
 
 });

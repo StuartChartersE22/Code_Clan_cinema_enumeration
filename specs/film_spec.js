@@ -24,8 +24,8 @@ describe('Film', function () {
     assert.strictEqual(actual, 2016);
   });
 
-  it('should have a length', function () {
-    const actual = moonlight.length;
+  it('should have a runtime', function () {
+    const actual = moonlight.runtime;
     assert.strictEqual(actual, 111);
   });
 
