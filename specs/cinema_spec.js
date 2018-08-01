@@ -37,7 +37,7 @@ describe('Cinema', function () {
     assert.deepStrictEqual(result, dunkirk);
   });
   it('should be able to filter films by genre', function () {
-    const results = cinema.findFilmsByGenre(`drama`);
+    const results = cinema.filmsByProperty( 'genre',`drama`);
     assert.deepStrictEqual(results, [moonlight, trainspotting]);
   });
   it('should be able to check whether there are some films from a particular year', function () {
