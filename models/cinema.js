@@ -28,4 +28,8 @@ Cinema.prototype.getTotalRuntime = function () {
   },0);
 }
 
+Cinema.prototype.filmsByProperty = function (properyName, value){
+  return this.films.filter(film => film[properyName] === value );
+}
+
 module.exports = Cinema;
